@@ -1,0 +1,123 @@
+.ParentCol {
+  width: 100%;
+  background-color: #fbf5dd;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.ParentCol h1 {
+  font-size: 4rem;
+  color: orangered;
+  margin-bottom: 1rem;
+}
+
+.ParentCol p {
+  color: black;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.servicesCard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Firstcard,
+.Secondcard,
+.Thirdcard,
+.Fourthcard {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 22%;
+  min-width: 250px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.Firstcard h2,
+.Secondcard h2,
+.Thirdcard h2,
+.Fourthcard h2 {
+  color: black;
+  font-size: 10rem;
+  margin-bottom: 10px;
+}
+
+.Firstcard h3,
+.Secondcard h3,
+.Thirdcard h3,
+.Fourthcard h3 {
+  font-size: 1.5rem;
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.Firstcard:hover,
+.Secondcard:hover,
+.Thirdcard:hover,
+.Fourthcard:hover {
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.Firstcard:hover h2,
+.Secondcard:hover h2,
+.Thirdcard:hover h2,
+.Fourthcard:hover h2,
+.Firstcard:hover p,
+.Secondcard:hover p,
+.Thirdcard:hover p,
+.Fourthcard:hover p {
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .servicesCard {
+    justify-content: center;
+  }
+
+  .Firstcard,
+  .Secondcard,
+  .Thirdcard,
+  .Fourthcard {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .servicesCard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Firstcard,
+  .Secondcard,
+  .Thirdcard,
+  .Fourthcard {
+    width: 80%;
+  }
+
+  .ParentCol h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .Firstcard,
+  .Secondcard,
+  .Thirdcard,
+  .Fourthcard {
+    width: 90%;
+  }
+
+  .ParentCol h1 {
+    font-size: 2.5rem;
+  }
+
+  .ParentCol p {
+    font-size: 1rem;
+  }
+}

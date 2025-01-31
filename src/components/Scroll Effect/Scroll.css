@@ -1,0 +1,104 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  justify-content: center;
+}
+
+.card {
+  margin: 0 3vw;
+  width: 22vw;
+  flex-shrink: 0;
+  padding: 2vw;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  scroll-snap-align: start;
+  border-radius: 5px;
+}
+
+.card-title {
+  transition: 0.3s;
+  text-align: center;
+  margin: 2vw 0 0;
+  font-size: 2vw;
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.card:last-child::after {
+  content: "";
+  width: 6vw;
+  position: absolute;
+  height: 100%;
+  right: -6vw;
+  top: 0;
+}
+
+.card img {
+  max-width: 70%;
+  max-height: 50vh;
+  opacity: 0;
+  margin: auto;
+  display: block;
+  transition: 0.35s;
+  transform: rotate(6deg) translate(0, 40px) scaleY(0.6);
+}
+
+.card.isVisible img {
+  max-width: 100%;
+  opacity: 1;
+  transform: none;
+}
+
+.card.isVisible .card-title {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.1s;
+}
+
+.card:first-child {
+  margin-left: 6vw;
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+    overflow-x: hidden;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .card {
+    width: 80vw;
+    margin: 15px 0;
+    padding: 5vw;
+    box-shadow: none;
+  }
+
+  .card-title {
+    font-size: 5vw;
+  }
+
+  .card img {
+    max-width: 100%;
+    transform: none;
+  }
+
+  .card:first-child {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,122 @@
+.footerMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* This ensures logo and menu are spaced out */
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center; /* Vertically align the elements */
+  padding: 1rem; /* Add padding for spacing */
+}
+
+.manu {
+  display: flex;
+  flex-direction: column; /* Stack menu items vertically */
+  align-items: flex-end; /* Align items to the right */
+}
+
+.manu li {
+  margin-top: 1rem;
+  font-size: 1rem;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  color: #000;
+  text-align: center;
+}
+
+.manu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mailCol {
+  margin-top: 3rem;
+  color: #000;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.mailCol:hover {
+  color: blueviolet;
+}
+
+.mailCol a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footerMain {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .manu {
+    align-items: center; /* Center the menu on smaller screens */
+    margin-top: 2rem; /* Adjust spacing */
+  }
+
+  .manu li {
+    font-size: 1rem; /* Slightly larger text on smaller screens */
+    margin: 0.5rem 0; /* Add space between the list items */
+  }
+
+  .mailCol {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+    margin-top: 1.5rem; /* Adjust margin for better spacing */
+  }
+
+  .logo {
+    width: 100px; /* Adjust the size of the logo on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 7rem;
+  }
+  .footerMain {
+    padding: 1rem 0; /* Reduce padding for very small screens */
+  }
+
+  .manu li {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .mailCol {
+    font-size: 1rem; /* Adjust font size further */
+    margin-top: 1rem; /* Less space on very small screens */
+  }
+
+  /* Scaling down logo size further for mobile */
+  .logo {
+    width: 80px; /* Further reduce logo size on very small screens */
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .logo img {
+    width: 7rem;
+  }
+  .footerMain {
+    width: 100%;
+    padding: 1rem 0; /* Reduce padding for very small screens */
+  }
+
+  .manu li {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .mailCol {
+    font-size: 1rem; /* Adjust font size further */
+    margin-top: 1rem; /* Less space on very small screens */
+  }
+
+  /* Scaling down logo size further for mobile */
+  .logo {
+    width: 80px; /* Further reduce logo size on very small screens */
+    height: auto;
+  }
+}

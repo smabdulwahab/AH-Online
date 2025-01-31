@@ -1,0 +1,13 @@
+.faqs {
+  margin-top: 5rem;
+}
+.faqs h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: orangered;
+}
+.accordion-body {
+  color: orangered;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
