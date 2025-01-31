@@ -1,17 +1,17 @@
 .footerMain {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* This ensures logo and menu are spaced out */
+  justify-content: space-between;
   flex-direction: row;
   background-color: #fff;
-  align-items: center; /* Vertically align the elements */
-  padding: 1rem; /* Add padding for spacing */
+  align-items: center;
+  padding: 1rem;
 }
 
 .manu {
   display: flex;
-  flex-direction: column; /* Stack menu items vertically */
-  align-items: flex-end; /* Align items to the right */
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .manu li {
@@ -53,23 +53,23 @@
   }
 
   .manu {
-    align-items: center; /* Center the menu on smaller screens */
-    margin-top: 2rem; /* Adjust spacing */
+    align-items: center;
+    margin-top: 2rem;
   }
 
   .manu li {
-    font-size: 1rem; /* Slightly larger text on smaller screens */
-    margin: 0.5rem 0; /* Add space between the list items */
+    font-size: 1rem;
+    margin: 0.5rem 0;
   }
 
   .mailCol {
-    font-size: 1rem; /* Adjust the font size for smaller screens */
-    margin-top: 1.5rem; /* Adjust margin for better spacing */
+    font-size: 1rem;
+    margin-top: 1.5rem;
   }
 
   .logo {
-    width: 100px; /* Adjust the size of the logo on smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
   }
 }
 
@@ -78,21 +78,19 @@
     width: 7rem;
   }
   .footerMain {
-    padding: 1rem 0; /* Reduce padding for very small screens */
+    padding: 1rem 0;
   }
 
   .manu li {
-    font-size: 1rem; /* Further reduce font size */
+    font-size: 1rem;
   }
 
   .mailCol {
-    font-size: 1rem; /* Adjust font size further */
-    margin-top: 1rem; /* Less space on very small screens */
+    font-size: 1rem;
+    margin-top: 1rem;
   }
-
-  /* Scaling down logo size further for mobile */
   .logo {
-    width: 80px; /* Further reduce logo size on very small screens */
+    width: 80px;
     height: auto;
   }
 }
@@ -102,21 +100,19 @@
   }
   .footerMain {
     width: 100%;
-    padding: 1rem 0; /* Reduce padding for very small screens */
+    padding: 1rem 0;
   }
 
   .manu li {
-    font-size: 1rem; /* Further reduce font size */
+    font-size: 1rem;
   }
 
   .mailCol {
-    font-size: 1rem; /* Adjust font size further */
-    margin-top: 1rem; /* Less space on very small screens */
+    font-size: 1rem;
+    margin-top: 1rem;
   }
-
-  /* Scaling down logo size further for mobile */
   .logo {
-    width: 80px; /* Further reduce logo size on very small screens */
+    width: 80px;
     height: auto;
   }
 }
